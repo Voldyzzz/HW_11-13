@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "GraphikLCG";
+  font-weight: 400;
+  src: url(/fonts/GraphikLCG-Regular.ttf);
+}
+
+@font-face {
+  font-family: "GraphikLCG";
+  font-weight: 600;
+  src: url(/fonts/GraphikLCG-Semibold.ttf);
+}
+
+html {
+  font-family: "GraphikLCG", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  background: transparent;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.btn-primary {
+  color: #fff;
+  padding: 0 22px;
+  height: 45px;
+  background: #ff6336;
+  border: 1px solid #ff6336;
+}
+
+.btn.btn-primary:hover {
+  background: transparent;
+  color: #ff6336;
+}
+
+.btn.btn-primary.black {
+  color: #000;
+  padding: 0 36px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.btn.btn-primary.black:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn.btn-primary.large {
+  height: 60px;
+  padding: 0 42px;
+}
+
+.btn.btn-primary.black.large {
+  padding: 0 30px;
+}
+
+.header {
+  padding: 25px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.header .container {
+  padding: 0 50px;
+}
+
+.header .header-inner {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  width: 130px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 50px;
+}
+
+.header .navigation {
+  display: flex;
+  margin-right: auto;
+}
+
+.header .navigation li {
+  margin-right: 50px;
+}
+
+.header .navigation li:last-child {
+  margin-right: 0;
+}
+
+.header .navigation li a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 130px 0 172px 0;
+}
+
+.hero .hero-inner {
+  max-width: 552px;
+  width: 100%;
+}
+
+.hero .hero-inner .title {
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 70px;
+  margin-bottom: 50px;
+}
+
+.hero .hero-inner .text {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+  max-width: 470px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.hero .hero-inner .sub-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 25px;
+}
