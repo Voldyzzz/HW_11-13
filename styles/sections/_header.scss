@@ -1,0 +1,41 @@
+.header {
+  padding: 25px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.header .container {
+  padding: 0 50px;
+}
+
+.header .header-inner {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  width: 130px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 50px;
+}
+
+.header .navigation {
+  display: flex;
+  margin-right: auto;
+}
+
+.header .navigation li {
+  margin-right: 50px;
+}
+
+.header .navigation li:last-child {
+  margin-right: 0;
+}
+
+.header .navigation li a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+}

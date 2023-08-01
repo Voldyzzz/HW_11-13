@@ -1,0 +1,43 @@
+.hero {
+  padding: 130px 0 172px 0;
+}
+
+.hero .hero-inner {
+  max-width: 552px;
+  width: 100%;
+  position: relative;
+}
+
+.hero .hero-inner:after {
+  content: url(/images/hero-image.png);
+  display: block;
+  width: 760px;
+  height: 530px;
+  position: absolute;
+  top: 22px;
+  left: calc(100% - 13px);
+  z-index: -1;
+}
+
+.hero .hero-inner .title {
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 70px;
+  margin-bottom: 50px;
+}
+
+.hero .hero-inner .text {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+  max-width: 470px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.hero .hero-inner .sub-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 25px;
+}

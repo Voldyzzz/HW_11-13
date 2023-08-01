@@ -1,0 +1,56 @@
+.localize {
+  background: #fff8e4;
+}
+
+.localize .localize-inner {
+  padding: 120px 20px 94px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.localize .localize-inner .title {
+  max-width: 890px;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 58px;
+}
+
+.localize .localize-inner .block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px 0 40px;
+}
+
+.localize .localize-inner .block .card {
+  width: 330px;
+  height: 294px;
+  margin-bottom: 56px;
+}
+
+.localize .localize-inner .block .card img {
+  width: 160px;
+  height: 120px;
+  margin: 20px 85px 26px 85px;
+}
+
+.localize .localize-inner .block .card .card-title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+
+.localize .localize-inner .block .card .text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
