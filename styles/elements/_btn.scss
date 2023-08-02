@@ -44,3 +44,17 @@
 .btn.btn-primary.black.large {
   padding: 0 30px;
 }
+
+.btn.largest {
+  padding: 0 20px;
+}
+
+.btn.btn-primary.black.white {
+  background-color: black;
+  color: #fff;
+}
+
+.btn.btn-primary.black.white:hover {
+  background-color: white;
+  color: black;
+}
