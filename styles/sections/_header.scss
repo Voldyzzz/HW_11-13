@@ -1,10 +1,24 @@
 .header {
   padding: 25px 0;
   border-bottom: 1px solid #ccc;
+
+  // @media screen and (max-width: 1380px) {
+  //   display: none;
+  // }
+
+  .btn {
+    @media screen and (max-width: 880px) {
+      display: none;
+    }
+  }
 }
 
 .header .container {
   padding: 0 50px;
+
+  @media screen and (max-width: 1220px) {
+    padding: 0 20px;
+  }
 }
 
 .header .header-inner {
@@ -17,6 +31,10 @@
   height: 20px;
   object-fit: contain;
   margin-right: 50px;
+
+  @media screen and (max-width: 980px) {
+    margin-right: 20px;
+  }
 }
 
 .header .navigation {
@@ -26,6 +44,10 @@
 
 .header .navigation li {
   margin-right: 50px;
+
+  @media screen and (max-width: 1330px) {
+    margin-right: 20px;
+  }
 }
 
 .header .navigation li:last-child {

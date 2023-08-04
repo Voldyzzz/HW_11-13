@@ -1,6 +1,10 @@
 .case__studies {
   padding: 92px 0 95px;
 
+  @media screen and (max-width: 1380px) {
+    display: none;
+  }
+
   &__inner {
     display: flex;
     align-items: flex-start;

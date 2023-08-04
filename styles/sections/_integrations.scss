@@ -1,4 +1,8 @@
 .integrations {
+  @media screen and (max-width: 1380px) {
+    display: none;
+  }
+
   &-inner {
     display: flex;
     flex-direction: column;

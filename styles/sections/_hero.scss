@@ -1,5 +1,9 @@
 .hero {
   padding: 130px 0 172px 0;
+
+  @media screen and (max-width: 1380px) {
+    display: none;
+  }
 }
 
 .hero .hero-inner {

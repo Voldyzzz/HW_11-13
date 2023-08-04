@@ -165,6 +165,11 @@ span {
   margin: 0 auto;
   padding: 0 55px;
 }
+@media screen and (max-width: 1220px) {
+  .container {
+    padding: 0 24px;
+  }
+}
 
 .p-lr-20 {
   padding: 0 20px;
@@ -235,9 +240,19 @@ span {
   padding: 25px 0;
   border-bottom: 1px solid #ccc;
 }
+@media screen and (max-width: 880px) {
+  .header .btn {
+    display: none;
+  }
+}
 
 .header .container {
   padding: 0 50px;
+}
+@media screen and (max-width: 1220px) {
+  .header .container {
+    padding: 0 20px;
+  }
 }
 
 .header .header-inner {
@@ -252,6 +267,11 @@ span {
      object-fit: contain;
   margin-right: 50px;
 }
+@media screen and (max-width: 980px) {
+  .header .logo {
+    margin-right: 20px;
+  }
+}
 
 .header .navigation {
   display: flex;
@@ -260,6 +280,11 @@ span {
 
 .header .navigation li {
   margin-right: 50px;
+}
+@media screen and (max-width: 1330px) {
+  .header .navigation li {
+    margin-right: 20px;
+  }
 }
 
 .header .navigation li:last-child {
@@ -276,6 +301,11 @@ span {
 
 .hero {
   padding: 130px 0 172px 0;
+}
+@media screen and (max-width: 1380px) {
+  .hero {
+    display: none;
+  }
 }
 
 .hero .hero-inner {
@@ -322,6 +352,11 @@ span {
   background: #ff9c7d;
   padding: 108px 0px 104px 0px;
 }
+@media screen and (max-width: 1380px) {
+  .companies {
+    display: none;
+  }
+}
 
 .companies .companies-inner {
   display: flex;
@@ -355,6 +390,11 @@ span {
 
 .projects {
   padding: 90px 0 150px 0;
+}
+@media screen and (max-width: 1380px) {
+  .projects {
+    display: none;
+  }
 }
 
 .projects .projects-inner {
@@ -434,6 +474,11 @@ span {
 .localize {
   background: #fff8e4;
 }
+@media screen and (max-width: 1380px) {
+  .localize {
+    display: none;
+  }
+}
 
 .localize .localize-inner {
   padding: 120px 0 94px 0;
@@ -490,6 +535,11 @@ span {
 
 .team {
   padding: 120px 0 68px 0;
+}
+@media screen and (max-width: 1380px) {
+  .team {
+    display: none;
+  }
 }
 
 .team .team-inner {
@@ -553,6 +603,11 @@ span {
 .chief-comments {
   background: #c9e8f2;
 }
+@media screen and (max-width: 1380px) {
+  .chief-comments {
+    display: none;
+  }
+}
 .chief-comments .chief-comments-inner {
   display: flex;
   flex-direction: row;
@@ -596,6 +651,11 @@ span {
   background: #dabc98;
   padding: 80px 0;
 }
+@media screen and (max-width: 1380px) {
+  .rating {
+    display: none;
+  }
+}
 .rating .rating-inner {
   display: flex;
 }
@@ -636,6 +696,11 @@ span {
   letter-spacing: 0.75px;
 }
 
+@media screen and (max-width: 1380px) {
+  .integrations {
+    display: none;
+  }
+}
 .integrations-inner {
   display: flex;
   flex-direction: column;
@@ -668,6 +733,11 @@ span {
 .try {
   background: #ff9c7d;
 }
+@media screen and (max-width: 1380px) {
+  .try {
+    display: none;
+  }
+}
 .try-inner {
   display: flex;
   flex-direction: column;
@@ -695,6 +765,11 @@ span {
 
 .case__studies {
   padding: 92px 0 95px;
+}
+@media screen and (max-width: 1380px) {
+  .case__studies {
+    display: none;
+  }
 }
 .case__studies__inner {
   display: flex;
@@ -767,6 +842,11 @@ span {
   color: #ff6336;
 }
 
+@media screen and (max-width: 1380px) {
+  .footer {
+    display: none;
+  }
+}
 .footer__inner {
   display: flex;
   justify-content: space-between;

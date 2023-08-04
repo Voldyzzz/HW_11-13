@@ -1,6 +1,10 @@
 .companies {
   background: #ff9c7d;
   padding: 108px 0px 104px 0px;
+
+  @media screen and (max-width: 1380px) {
+    display: none;
+  }
 }
 
 .companies .companies-inner {

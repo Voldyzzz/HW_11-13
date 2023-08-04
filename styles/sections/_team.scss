@@ -1,5 +1,9 @@
 .team {
   padding: 120px 0 68px 0;
+
+  @media screen and (max-width: 1380px) {
+    display: none;
+  }
 }
 
 .team .team-inner {
