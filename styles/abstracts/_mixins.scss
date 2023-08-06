@@ -1,0 +1,75 @@
+@mixin flexStart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@mixin titleAdaptive {
+  font-size: 40px;
+  line-height: 44px;
+}
+
+@mixin titleAdaptive-reduce {
+  font-size: 32px;
+  line-height: 36px;
+}
+@mixin textAdaptive {
+  font-size: $size;
+  line-height: 18px;
+}
+
+@mixin respond($breadpoint) {
+  @if $breadpoint == 1400px {
+    @media screen and (max-width: 1400px) {
+      @content;
+    }
+  }
+
+  @if $breadpoint == 1380px {
+    @media screen and (max-width: 1380px) {
+      @content;
+    }
+  }
+
+  @if $breadpoint == 1330px {
+    @media screen and (max-width: 1330px) {
+      @content;
+    }
+  }
+
+  @if $breadpoint == 1220px {
+    @media screen and (max-width: 1220px) {
+      @content;
+    }
+  }
+
+  @if $breadpoint == 1160px {
+    @media screen and (max-width: 1160px) {
+      @content;
+    }
+  }
+
+  @if $breadpoint == 980px {
+    @media screen and (max-width: 980px) {
+      @content;
+    }
+  }
+
+  @if $breadpoint == 880px {
+    @media screen and (max-width: 880px) {
+      @content;
+    }
+  }
+
+  @if $breadpoint == 580px {
+    @media screen and (max-width: 580px) {
+      @content;
+    }
+  }
+
+  @if $breadpoint == 450px {
+    @media screen and (max-width: 450px) {
+      @content;
+    }
+  }
+}

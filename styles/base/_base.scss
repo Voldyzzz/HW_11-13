@@ -3,7 +3,7 @@
 }
 
 html {
-  font-family: "GraphikLCG", sans-serif;
+  font-family: $font-family, sans-serif;
 }
 
 span {
@@ -15,11 +15,15 @@ span {
   margin: 0 auto;
   padding: 0 55px;
 
-  @media screen and (max-width: 1220px) {
+  @include respond(1220px) {
     padding: 0 24px;
   }
 }
 
 .p-lr-20 {
   padding: 0 20px;
+}
+
+.mr-10 {
+  margin-right: 10px;
 }

@@ -10,9 +10,7 @@
     flex-direction: row;
 
     .block {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      @include flexStart;
       margin-right: 60px;
 
       .text {

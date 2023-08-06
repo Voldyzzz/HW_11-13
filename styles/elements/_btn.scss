@@ -1,5 +1,5 @@
 .btn {
-  font-size: 16px;
+  font-size: $size;
   font-weight: 600;
   text-align: center;
   display: inline-block;
@@ -12,28 +12,28 @@
 }
 
 .btn.btn-primary {
-  color: #fff;
+  color: $color-white;
   padding: 0 22px;
   height: 45px;
-  background: #ff6336;
-  border: 1px solid #ff6336;
+  background: $color-primary;
+  border: 1px solid $color-primary;
 }
 
 .btn.btn-primary:hover {
   background: transparent;
-  color: #ff6336;
+  color: $color-primary;
 }
 
 .btn.btn-primary.black {
-  color: #000;
+  color: $color-black;
   padding: 0 36px;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .btn.btn-primary.black:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: $color-black;
+  color: $color-white;
 }
 
 .btn.btn-primary.large {
@@ -51,7 +51,7 @@
 
 .btn.btn-primary.black.white {
   background-color: black;
-  color: #fff;
+  color: $color-white;
 }
 
 .btn.btn-primary.black.white:hover {

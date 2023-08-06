@@ -1,15 +1,9 @@
 .projects {
   padding: 90px 0 150px 0;
-
-  @media screen and (max-width: 1380px) {
-    display: none;
-  }
 }
 
 .projects .projects-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  @include flexStart;
 }
 
 .projects .item {
@@ -19,15 +13,29 @@
   width: 100%;
   padding: 0 20px;
   margin-bottom: 250px;
+
+  @include respond(880px) {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .projects .item:nth-child(even) .block {
   order: 2;
   margin-right: 0;
+
+  @include respond(880px) {
+    order: 1;
+  }
 }
 
 .projects .item:nth-child(even) .image {
   order: 1;
+
+  @include respond(880px) {
+    order: 2;
+  }
 }
 
 .projects .item:last-child {
@@ -36,21 +44,36 @@
 
 .projects .item:last-child .image {
   max-height: 577px;
+
+  @include respond(880px) {
+    height: 300px;
+  }
 }
 
 .projects .item .block {
   max-width: 494px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  @include flexStart;
   margin-right: 20px;
+
+  @include respond(880px) {
+    max-width: none;
+    margin: 0 0 20px 0;
+  }
 }
 
 .projects .projects-inner .title {
   font-size: 50px;
   font-weight: 600;
   line-height: 60px;
+
+  @include respond(880px) {
+    @include titleAdaptive;
+  }
+
+  @include respond(580px) {
+    @include titleAdaptive-reduce;
+  }
 }
 
 .projects .projects-inner .text {
@@ -58,6 +81,14 @@
   font-weight: 400;
   line-height: 30px;
   margin: 30px 0;
+
+  @include respond(880px) {
+    @include textAdaptive;
+  }
+
+  @include respond(580px) {
+    margin: 15px 0;
+  }
 }
 
 .projects .projects-inner .link {
@@ -70,11 +101,22 @@
 }
 
 .projects .item .link:hover {
-  color: #ff6336;
+  color: $color-primary;
 }
 
 .projects .item .image {
   max-width: 632px;
-  max-height: 632px;
-  object-fit: contain;
+  height: 632px;
+  object-fit: cover;
+
+  @include respond(1160px) {
+    max-width: 300px;
+    height: 300px;
+  }
+
+  @include respond(880px) {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+  }
 }

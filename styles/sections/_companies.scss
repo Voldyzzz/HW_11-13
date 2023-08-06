@@ -2,8 +2,8 @@
   background: #ff9c7d;
   padding: 108px 0px 104px 0px;
 
-  @media screen and (max-width: 1380px) {
-    display: none;
+  @include respond(880px) {
+    padding: 40px 0;
   }
 }
 
@@ -21,18 +21,41 @@
   max-width: 720px;
   width: 100%;
   margin-bottom: 70px;
+
+  @include respond(880px) {
+    @include titleAdaptive;
+    margin-bottom: 20px;
+  }
+
+  @include respond(580px) {
+    @include titleAdaptive-reduce;
+  }
 }
 
 .companies .block {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 0 24px;
 }
 
 .companies .block img {
   margin-right: 102px;
+
+  @include respond(1400px) {
+    margin: 30px;
+  }
+
+  @include respond(580px) {
+    width: calc(50% - 60px);
+    height: 50px;
+  }
 }
 
 .companies .block img:last-child {
   margin-right: 0;
+
+  @include respond(580px) {
+    margin: 30px;
+  }
 }
