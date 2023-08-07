@@ -7,6 +7,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include respond(880px) {
+    padding: 60px 0 27px 0;
+  }
 }
 
 .localize .localize-inner .title {
@@ -17,6 +21,16 @@
   font-weight: 600;
   line-height: 60px;
   margin-bottom: 58px;
+
+  @include respond(880px) {
+    @include titleAdaptive;
+    max-width: none;
+    margin-bottom: 28px;
+  }
+
+  @include respond(580px) {
+    @include titleAdaptive-reduce;
+  }
 }
 
 .localize .localize-inner .block {
@@ -25,19 +39,39 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40px 0 40px;
+  padding: 0 40px;
+
+  @include respond(1160px) {
+    justify-content: center;
+    padding: 0 20px;
+  }
 }
 
 .localize .localize-inner .block .card {
   width: 330px;
   height: 294px;
   margin-bottom: 56px;
+
+  @include respond(880px) {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
 }
 
 .localize .localize-inner .block .card img {
   width: 160px;
-  height: 120px;
+  height: 150px;
   margin: 20px 85px 26px 85px;
+
+  @include respond(880px) {
+    width: 120px;
+    height: 90px;
+    margin: 10px 45px 16px 45px;
+  }
 }
 
 .localize .localize-inner .block .card .card-title {
@@ -46,6 +80,12 @@
   font-weight: 600;
   line-height: 35px;
   margin-bottom: 20px;
+
+  @include respond(880px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
 }
 
 .localize .localize-inner .block .card .text {
@@ -53,4 +93,9 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
+
+  @include respond(880px) {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
