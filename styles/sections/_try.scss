@@ -1,15 +1,19 @@
 .try {
   background: #ff9c7d;
 
-  @media screen and (max-width: 1380px) {
-    display: none;
-  }
-
   &-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 120px 0 160px 0;
+
+    @include respond(880px) {
+      padding: 60px 0 80px;
+    }
+
+    @include respond(580px) {
+      padding: 30px 0 40px;
+    }
 
     .title {
       max-width: 784px;
@@ -18,6 +22,16 @@
       font-size: 65px;
       font-weight: 600;
       line-height: 75px;
+
+      @include respond(880px) {
+        max-width: none;
+        @include titleAdaptive;
+      }
+
+      @include respond(580px) {
+        font-size: $smallTitle-size;
+        line-height: 30px;
+      }
     }
 
     .text {
@@ -29,6 +43,11 @@
       line-height: 30px;
       margin-top: 30px;
       margin-bottom: 54px;
+
+      @include respond(580px) {
+        @include textAdaptive;
+        margin: 10px 0 20px;
+      }
     }
   }
 }

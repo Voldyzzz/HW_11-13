@@ -61,6 +61,12 @@
     }
   }
 
+  @if $breadpoint == 660px {
+    @media screen and (max-width: 660px) {
+      @content;
+    }
+  }
+
   @if $breadpoint == 580px {
     @media screen and (max-width: 580px) {
       @content;
